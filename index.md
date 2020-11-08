@@ -70,22 +70,22 @@ Bitcoin has a fixed emission schedule that decreases with each halving event whi
 * Reward era 1 = 50 bitcoins per block
 * Reward era 2 = 25 bitcoins per block
 * Reward era 3 = 12.5 bitcoins per block
-* Reward era 6 (current) = 6.25 bitcoins per block 
+* Reward era 4 (current) = 6.25 bitcoins per block 
 
 Now that we understand that we can calculate the expected amount of bitcoins at any given block height.
 
-* Era 1 = (50 * 210,000) = **10,500,000**
-* Era 2 = (25 * 210,000) = **5,250,000**
-* Era 3 = (12.5 * 210,000) = **2,625,000**
-* Era 4 = (6.25 * (655,987 - 630,000)) = **162,418.75**
+* Reward era 1 = (50 * 210,000) = **10,500,000**
+* Reward era 2 = (25 * 210,000) = **5,250,000**
+* Reward era 3 = (12.5 * 210,000) = **2,625,000**
+* Reward era 4 = (6.25 * (655,987 - 630,000)) = **162,418.75**
 
 *840,000 = The block height at the next halving* 
 *655,987 = The block height at time of running gettxoutsetinfo*
 *If we minus one from the other we determine how many blocks have passed under the current reward era*
 
-Add them all together and we get **18,537,418.75** of expected suplpy.
+Add them all together and we get **18,537,418.75** of expected supply. However, my node calculated that at block height 655,987 there were in fact **18,537,233.94446619**. 
 
-However, my node calculated that at block height 655,987 there were in fact **18,537,233.94446619**. Why would my node calculate that there are actually **184.80553381** less bitcoins in existence that the known emission schedule suggestes there should be?  
+Why would my node calculate that there are actually **184.80553381** less bitcoins in existence that the known emission schedule suggestes there should be?  
 
 This is generally caused when a miner does not collect the full reward having successfully mined a block. There is also another quirk in the Bitcoin code that prevents the reward from the [genesis block](https://en.bitcoin.it/wiki/Genesis_block) being spent.
 
