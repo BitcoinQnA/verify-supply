@@ -6,7 +6,7 @@ Do you know how many dollars there are or how much gold has been mined?
 
 The answer to both of those questions is no. Certain government individuals may be privy to information that allows them to make an educated guess, but the fact is **nobody on earth** can answer those questions with any sort of accuracy. Bitcoin is different. 
 
-For the first time in human history, anyone has the freedom to find out the **exact** total supply of a global monetary asset, without the need to ask for permission or rely on anyone else. All that's required is a [node](https://node.guide) that you can run (for free) on your computer and around 10 minutes of your time.  
+For the first time in human history, anyone has the freedom to find out the **exact** total supply of a global monetary asset, without the need to ask for permission or rely on anyone else. All that's required is a [node](https://node.guide) and around 10 minutes of your time.  
 
 ***
 
