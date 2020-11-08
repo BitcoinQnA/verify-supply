@@ -42,6 +42,7 @@ Once again, depending on your hardware this may take up to 10 minutes.
 3. Open 'console' within Bitcoin Core and enter `bitcoin-cli gettxoutsetinfo`
 4. Wait. Depending on your hardware, this could take up to 10 minutes
 
+***
 
 You should then see a response that looks like this...
 
