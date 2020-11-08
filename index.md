@@ -2,7 +2,9 @@
 layout: default
 ---
 
-Do you know how many dollars there are or how much gold has been mined?
+Do you know how many dollars have ever been printed?
+
+Do you know how much gold has ever been mined?
 
 The answer to both of those questions is no. Certain government individuals may be privy to information that allows them to make an educated guess, but the fact is **nobody on earth** can answer those questions with any sort of accuracy. Bitcoin is different. 
 
@@ -12,7 +14,9 @@ For the first time in human history, anyone has the freedom to find out the **ex
 
 ### How?
 
-Verifying the total supply of all bitcoins in existence is significantly easier than you might imagine. Here's how...
+Verifying the total supply of all bitcoins in existence is significantly easier than you might imagine. You can run this command any time you like, as often as you like, safe in the knowledge that you are only trusting your own hardware and open sourced software to verify for you.
+
+Here's how...
 
 #### Stand Alone Nodes
 
@@ -21,6 +25,15 @@ Verifying the total supply of all bitcoins in existence is significantly easier 
 Instructions to do this will be found in your node's documentation pages. Mac + Linux users should do this via 'Terminal' and Windows users can download and use [Putty](https://www.putty.org/)
 3. Enter the following command `bitcoin-cli gettxoutsetinfo`
 4. Wait. Depending on your hardware, this could take up to 10 minutes
+
+#### Stand Alone Nodes (non SSH version)
+
+Most of the popular node implementations now come packaged with a local version of [this explorer](https://explorer.btc21.org/) which allows you to execute RPC commands through the GUI. Simple navigate to the 'RPC browser' section and click on `gettxoutsetinfo` and then execute.
+
+Once again, depending on your hardware this may take up to 10 minutes.
+
+<img src="https://raw.githubusercontent.com/BitcoinQnA/verify-supply/master/assets/images/RPC%20Browser.png" class=responsive width="700" height="350" maxheight="500">
+
 
 #### Bitcoin Core
 
