@@ -32,7 +32,7 @@ Most of the popular node implementations now come packaged with a local version 
 
 Once again, depending on your hardware this may take up to 10 minutes.
 
-<img src="https://raw.githubusercontent.com/BitcoinQnA/verify-supply/master/assets/images/RPC%20Browser.png" class=responsive width="700" height="350" maxheight="500">
+<img src="https://raw.githubusercontent.com/BitcoinQnA/verify-supply/master/assets/images/RPC%20Browser.png" class=responsive width="950" height="350" maxheight="500">
 
 
 #### Bitcoin Core
