@@ -12,13 +12,13 @@ For the first time in human history, anyone has the freedom to find out the **ex
 
 ***
 
-### How?
+## How?
 
 Verifying the total supply of all bitcoins in existence is significantly easier than you might imagine. You can run this command any time you like, as often as you like, safe in the knowledge that you are only trusting your own hardware and open sourced software to verify for you.
 
 Here's how...
 
-#### Stand Alone Nodes
+### Stand Alone Nodes
 
 1. Set up your [node](https://node.guide)
 2. Once initial block download is complete SSH in to your node. This is not required if you are running Bitcoin Core.
@@ -26,7 +26,7 @@ Instructions to do this will be found in your node's documentation pages. Mac + 
 3. Enter the following command `bitcoin-cli gettxoutsetinfo`
 4. Wait. Depending on your hardware, this could take up to 10 minutes
 
-#### Stand Alone Nodes (non SSH version)
+### Stand Alone Nodes (non SSH version)
 
 Most of the popular node implementations now come packaged with a local version of [this explorer](https://explorer.btc21.org/) which allows you to execute RPC commands through the GUI. Simple navigate to the 'RPC browser' section and click on `gettxoutsetinfo` and then execute.
 
@@ -35,7 +35,7 @@ Once again, depending on your hardware this may take up to 10 minutes.
 <img src="https://raw.githubusercontent.com/BitcoinQnA/verify-supply/master/assets/images/RPC%20Browser.png" class=responsive width="950" height="350" maxheight="500">
 
 
-#### Bitcoin Core
+### Bitcoin Core
 
 1. Download and install [Bitcoin Core](https://bitcoin.org/en/download) onto your computer
 2. Wait for initial block download to complete
@@ -59,7 +59,42 @@ You should then see a response that looks like this...
 }
 ```
 
-<br/>
+***
+
+## Calculations
+
+So how did my node come to the conclusion that, at the time I ran `gettxoutsetinfo` there were a total of 18,537,233.94446619 bitcoins in existence out of the [known](https://en.bitcoin.it/wiki/Controlled_supply) final supply of 21,000,000? 
+
+Bitcoin has a fixed emission schedule that decreases with each halving event which occurs every 210,000 blocks (roughly four years). These periods are sometimes referred to as 'reward eras'. Here is a summary of the supply throughout the historical eras up to time of writing.
+
+* Reward era 1 = 50 bitcoins per block
+* Reward era 2 = 25 bitcoins per block
+* Reward era 3 = 12.5 bitcoins per block
+* Reward era 6 (current) = 6.25 bitcoins per block 
+
+Now that we understand that we can calculate the expected amount of bitcoins at any given block height.
+
+* Era 1 = (50 * 210,000) = **10,500,000**
+* Era 2 = (25 * 210,000) = **5,250,000**
+* Era 3 = (12.5 * 210,000) = **2,625,000**
+* Era 4 = (6.25 * (655,987 - 630,000)) = **162,418.75**
+*840,000 = The block height at the next halving* 
+*655,987 = The block height at time of running gettxoutsetinfo*
+*If we minus one from the other we determine how many blocks have passed under the current reward era*
+
+Add them all together and we get **18,537,418.75** of expected suplpy.
+
+However, my node calculated that at block height 655,987 there were in fact **18,537,233.94446619**. Why would my node calculate that there are actually **184.80553381** less bitcoins in existence that the known emission schedule suggestes there should be?  
+
+This is generally caused when a miner does not collect the full reward having successfully mined a block. There is also another quirk in the Bitcoin code that prevents the reward from the [genesis block](https://en.bitcoin.it/wiki/Genesis_block) being spent.
+
+***
+
+<p align="center">
+  <a href="https://twitter.com/BitcoinQ_A">By Bitcoin Q+A</a>
+  <br><br>
+</p>
+
 
 
 
