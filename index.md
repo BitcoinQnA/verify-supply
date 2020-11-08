@@ -78,6 +78,7 @@ Now that we understand that we can calculate the expected amount of bitcoins at 
 * Era 2 = (25 * 210,000) = **5,250,000**
 * Era 3 = (12.5 * 210,000) = **2,625,000**
 * Era 4 = (6.25 * (655,987 - 630,000)) = **162,418.75**
+
 *840,000 = The block height at the next halving* 
 *655,987 = The block height at time of running gettxoutsetinfo*
 *If we minus one from the other we determine how many blocks have passed under the current reward era*
