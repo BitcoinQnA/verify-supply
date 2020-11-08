@@ -94,7 +94,13 @@ Add them all together and we get **18,537,418.75** of expected supply. However, 
 
 Why would my node calculate that there are actually **184.80553381** less bitcoins in existence that the known emission schedule suggests there should be?  
 
-This is generally caused when a miner does not collect the full reward having successfully mined a block. There is also another quirk in the Bitcoin code that prevents the reward from the [genesis block](https://en.bitcoin.it/wiki/Genesis_block) being spent.
+There are a number of reasons that are outlined in great detail in [this article](https://fjahr.com/posts/where-are-the-coins/) by [Fjhar](https://twitter.com/fjahr). Here is a brief summary...
+
+1. It is hard coded into the Bitcoin codebase that the reward from the [genesis block](https://en.bitcoin.it/wiki/Genesis_block) cannot be spent
+2. Duplicate TxID bug outlined in [BIP30](https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki)
+3. OP_RETURN 'burned' coins
+4. Miners not claiming the full block reward
+
 
 ***
 
