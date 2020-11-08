@@ -2,79 +2,50 @@
 layout: default
 ---
 
-### About
+Do you know how many dollars there are or how much gold has been mined?
 
-Just your average Joe with a 9-5 job and a passion for learning about Bitcoin. As my knowledge increases I try to give back through education. I am not a programmer or developer, nor do I have any prior technical experience. I have been fortunate enough to speak regularly with some smart and generous people who help me understand these complex topics, which I then try to present in an approachable way for others to learn.
+The answer to both of those questions is no. Certain government individuals may be privy to information that allows them to make an educated guess, but the fact is **nobody on earth** can answer those questions with any sort of accuracy. Bitcoin is different. 
 
-This page is a single collection of my contributions that I can point people towards when starting out. If you find it valuable, please share it with your peers.
+For the first time in human history, anyone has the freedom to find out the **exact** total supply of a global monetary asset, without the need to ask for permission or rely on anyone else. All that's required is a [node](https://node.guide) that you can run (for free) on your computer and around 10 minutes of your time.  
 
-<br/>
+***
 
-### Main Resources
+### How?
 
-| Resource                   | Description                                                                |
-|---------------------------|----------------------------------------------------------------------------|
-| [BitcoinQnA](https://www.bitcoinqna.com/)               | Simple Q+A to get started with Bitcoin basics                  |
-| [Bitcoin Privacy Guide](https://bitcoinprivacy.guide/)  | Guide to help Bitcoiners become more privacy focused           |
-| [Bitcoin Graphics](https://bitcoingraphics.page/)       | Graphical Bitcoin Explainers                                   |
-| [Bitcoin Node Guide](https://node.guide/)               | Guide to help Bitcoiners explore the different node options                  |
-| [no-KYC only](https://bitcoinqna.github.io/noKYConly/)  | Explainer on the risks of purchasing bitcoin via KYC routes    |
-| [Whirlpool Fee  Calculator](https://www.whirlpoolfees.com/) | Tool to help Whirlpool users calculate their fees prior to mixing |
-| [Articles](https://www.bitcoinqna.com/articles)             | Collection of articles relating to wallets, nodes and purchasing bitcoin   |
-| [Github](https://github.com/BitcoinQnA)                     | Used for the creation and hosting of this page and most of the sites listed above  |
+Verifying the total supply of all bitcoins in existence is significantly easier than you might imagine. Here's how...
 
-<br/>
+#### Stand Alone Nodes
 
+1. Set up your [node](https://node.guide)
+2. Once initial block download is complete SSH in to your node. This is not required if you are running Bitcoin Core.
+Instructions to do this will be found in your node's documentation pages. Mac + Linux users should do this via 'Terminal' and Windows users can download and use [Putty](https://www.putty.org/)
+3. Enter the following command `bitcoin-cli gettxoutsetinfo`
+4. Wait. Depending on your hardware, this could take up to 10 minutes
 
-### Other Resources
+#### Bitcoin Core
 
-| Resource                   | Description                                                                |
-|---------------------------|----------------------------------------------------------------------------|
-| [Once BITten](https://anchor.fm/daniel-prince6/episodes/BitcoinQ_A---Beginners-Or-Refreshers-Guide-To-Bitcoin-eguivq)               | Podcast appearance covering the beginners guide to Bitcoin                               |
-| [Bit-Buy-Bit #1](https://www.bit-buy-bit.com/podcast-1/episode/26df4d37/ep35-bitcoin-podcast-with-itcoin-qa)               | Podcast appearance covering the basics of Bitcoin wallets                |
-| [Bit-Buy-Bit #2](https://www.bit-buy-bit.com/podcast-1/episode/1c6e67f7/ep38-bitcoin-podcast-with-bitcoin-qa-nodes)               | Podcast appearance covering the basics of Bitcoin nodes                |
-| [Bit-Buy-Bit #3](https://www.bit-buy-bit.com/podcast-1/episode/1cdf5f46/ep41-bitcoin-podcast-with-bitcoin-qa-lightning)               | Podcast appearance covering the basics of the Lightning Network                |
-| [Bit-Buy-Bit #4](https://www.bit-buy-bit.com/podcast-1/episode/2a64f9e1/ep43-bitcoin-podcast-with-bitcoin-qa-coinjoin)               | Podcast appearance covering the basics of Coinjoin + Samourai Wallet                |
-| [Satoshi en Venezuela](https://www.youtube.com/watch?v=QkNxSmdtNNs&feature=youtu.be)               | Podcast appearance covering privacy, Bitcoin myths and common mistakes         |
-
-<br/>
+1. Download and install [Bitcoin Core](https://bitcoin.org/en/download) onto your computer
+2. Wait for initial block download to complete
+3. Open 'console' within Bitcoin Core and enter `bitcoin-cli gettxoutsetinfo`
+4. Wait. Depending on your hardware, this could take up to 10 minutes
 
 
-### Article List
+You should then see a response that looks like this...
 
-| Name        | Category | Description                        |
-|---------------------|----------|------------------------------------|
-| [Samourai Wallet 101](https://www.bitcoinqna.com/post/samourai-101) | Wallets  | Basic explainer of Samourai Wallet |
-| [OpenDime 101](https://www.bitcoinqna.com/post/opendime-101)                  | Wallets          | Basic explainer on setting up and using an Open Dime                                   
-| [Zeus 101](https://www.bitcoinqna.com/post/zeus-101)                  | Wallets          | Basic explainer on setting up and using Zeus                  |          
-| [Coldcard 101](https://www.bitcoinqna.com/post/coldcard-101)                    | Wallets         | Basic explainer on setting up and using a Coldcard Hardware Wallet                                   |
-| [Zap 101](https://www.bitcoinqna.com/post/zap-101)                    | Wallets         | Basic explainer on setting up and using Zap              |
-| [Blue Wallet 101](https://www.bitcoinqna.com/post/bluewallet-101)                    | Wallets          | Basic explainer on setting up and using Blue Wallet |
-| [Sentinel 101](https://www.bitcoinqna.com/post/sentinel-101)                    | Wallets         | Basic explainer on setting up and using Sentinel 'watch only' wallet      |
-|  [Sparrow Wallet 101](https://www.bitcoinqna.com/post/sparrow-wallet-101)                   | Wallets          | Basic explainer on setting up and using Sparrow desktop wallet           |
-|  [Specter Desktop 101](https://www.bitcoinqna.com/post/specter-desktop-101)                   | Wallets          | Basic explainer on setting up and using Specter desktop wallet           |
-|  [myNode 101](https://www.bitcoinqna.com/post/mynode-features-101)                   | Nodes          | Feature breakdown of myNode                          |
-|  [RoninDojo 101](https://www.bitcoinqna.com/post/ronindojo-101)                   | Nodes          | Feature breakdown of RoninDojo                          |
-|  [Migrating your Samourai Wallet to RoninDojo](https://www.bitcoinqna.com/post/connecting-or-migrating-your-samourai-wallet-to-ronindojo)                   | Nodes         | Connect or migrating Samourai Wallet to RoninDojo guide                                  |
-|  [Rescanning XPUBs using Dojo Maintenance Tool](https://www.bitcoinqna.com/post/rescanning-xpubs-using-dojo-maintenance-tool)   | Nodes         |  Guide to restore balances using Dojo Maintenance Tool                                  |
-|  [Samourai Wallet Cold Storage Implications](https://www.bitcoinqna.com/post/samourai-wallet-cold-storage-implications)                   | Privacy         |  Explainer on the considerations required when spending to cold storage                                   |
-|  [Dealing With Coinjoin Change Outputs](https://www.bitcoinqna.com/post/dealing-with-coinjoin-change-outputs)                   | Privacy         | Tips on ways to deal with change outputs from Coinjoins                                   |
-|  [10 Tips For Interacting With Bitcoin More Privately](https://www.bitcoinqna.com/post/10-tips-for-interacting-with-bitcoin-more-privately)        | Privacy         |  Simple privacy tips for interacting with Bitcoin                                  |
-|  [Your First Mobile Coinjoin](https://www.bitcoinqna.com/post/your-first-mobile-coinjoin)                   | Privacy          | Guide for using Whirlpool on mobile                                   |
-|  [Whirlpool + Postmix spending FAQ](https://www.bitcoinqna.com/post/whirlpool-faq) | Privacy   | Whirlpool explainer and answers to FAQ                 |
-|  [10 Steps To Your First no-KYC Bitcoin](https://www.bitcoinqna.com/post/10-steps-to-your-first-non-kyc-bitcoin)  | Getting Bitcoin         | Guide for purchasing bitcoin on Bisq                                   |
-|  [10 Steps To Your First no-KYC Bitcoin (Hodl Hodl)](https://www.bitcoinqna.com/post/10-steps-to-your-first-non-kyc-bitcoin-hodlhodl-edition)                   | Getting Bitcoin         | Guide for purchasing bitcoin on Hodl Hodl                                   |
-|  [Creating A Buy Offer On  Hodl Hodl](https://www.bitcoinqna.com/post/creating-a-buy-offer-on-hodl-hodl)  | Getting Bitcoin         |  Guide for creating a buy offer using Hodl Hodl                                  |
+```
+{
+  "height": 655987,
+  "bestblock": "00000000000000000002c5f4af7514bdbfcbe6bb5beff57329f9e418024dab7e",
+  "transactions": 42277264,
+  "txouts": 68674534,
+  "bogosize": 5155427851,
+  "hash_serialized_2": "85a745a8739f6907bd0cff3ffaccbc29e5545a85aee8aca8b38daabe8a790442",
+  "disk_size": 4216833480,
+  "total_amount": 18537233.94446619
+}
+```
 
 <br/>
 
-### Get in touch
 
-*   [Twitter](https://twitter.com/BitcoinQ_A)
-*   [Telegram](https://t.me/BitcoinQnA)
-*   [Keybase](https://keybase.io/bitcoinqna)
-*   [Email](mailto:bitcoinqna@protonmail.com)
-
-
-If you would like to support my work, please visit my [donation](https://www.bitcoinqna.com/donations) page.
 
