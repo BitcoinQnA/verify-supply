@@ -85,7 +85,7 @@ Now that we understand that we can calculate the expected amount of bitcoins at 
 
 Add them all together and we get **18,537,418.75** of expected supply. However, my node calculated that at block height 655,987 there were in fact **18,537,233.94446619**. 
 
-Why would my node calculate that there are actually **184.80553381** less bitcoins in existence that the known emission schedule suggestes there should be?  
+Why would my node calculate that there are actually **184.80553381** less bitcoins in existence that the known emission schedule suggests there should be?  
 
 This is generally caused when a miner does not collect the full reward having successfully mined a block. There is also another quirk in the Bitcoin code that prevents the reward from the [genesis block](https://en.bitcoin.it/wiki/Genesis_block) being spent.
 
