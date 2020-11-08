@@ -39,8 +39,15 @@ Once again, depending on your hardware this may take up to 10 minutes.
 
 1. Download and install [Bitcoin Core](https://bitcoin.org/en/download) onto your computer
 2. Wait for initial block download to complete
-3. Open 'console' within Bitcoin Core and enter `bitcoin-cli gettxoutsetinfo`
+3. Open 'console' within Bitcoin Core and enter `gettxoutsetinfo`
 4. Wait. Depending on your hardware, this could take up to 10 minutes
+
+### Other options
+
+Once connected to your node, the following applications allow you to verify the supply at the click of a button
+
+* [Fully Noded](https://fonta1n3.github.io/FullyNoded/)
+* [Specter Desktop](https://github.com/cryptoadvance/specter-desktop)
 
 ***
 
@@ -81,9 +88,9 @@ Now that we understand that we can calculate the expected amount of bitcoins at 
  
 *655,987 = The block height at time of running gettxoutsetinfo*
 *630,000 = The amount of blocks that have passed before the current reward era
-*If we minus one from the other we determine how many blocks have passed under the current reward era*
+*If we minus one from the other, we determine how many blocks have passed during the current reward era*
 
-Add them all together and we get **18,537,418.75** of expected supply. However, my node calculated that at block height 655,987 there were in fact **18,537,233.94446619**. 
+Add them all together and we get **18,537,418.75** of expected supply. However, my node calculated that, at block height 655,987 there were in fact **18,537,233.94446619**. 
 
 Why would my node calculate that there are actually **184.80553381** less bitcoins in existence that the known emission schedule suggests there should be?  
 
