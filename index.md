@@ -84,7 +84,7 @@ Now that we understand that we can calculate the expected amount of bitcoins at 
 * Reward era 4 = (6.25 * (655,987 - 629,999)) = **162,425**
  
 *655,987 = The block height at time of running gettxoutsetinfo*  
-*629,999 = The amount of blocks that have passed before the current reward era*
+*629,999 = The amount of blocks that have passed before the current reward era*  
 *If we minus one from the other, we determine how many blocks have passed during the current reward era*
 
 Add them all together and we get **18,537,425** of expected supply. However, my node calculated that, at block height 655,987 there were in fact **18,537,233.94446619**. 
