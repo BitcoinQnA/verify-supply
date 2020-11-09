@@ -96,9 +96,9 @@ However, my node calculated that, at block height 655,987 there were in fact **1
 
 Why would my node calculate that there are actually **191.05553381** less bitcoins in existence that the known emission schedule suggests there should be?  
 
-There are a number of reasons that are outlined in great detail in [this article](https://fjahr.com/posts/where-are-the-coins/) by [Fjhar](https://twitter.com/fjahr) or you can read a shorter version in [this](https://bitcoin.stackexchange.com/questions/38994/will-there-be-21-million-bitcoins-eventually/38998#38998) Bitcoin Stack Exchange answer
+There are a number of reasons that are outlined in great detail in [this article](https://fjahr.com/posts/where-are-the-coins/) by [Fjhar](https://twitter.com/fjahr) or you can read a shorter version in [this](https://bitcoin.stackexchange.com/questions/38994/will-there-be-21-million-bitcoins-eventually/38998#38998) Bitcoin Stack Exchange answer.
 
-Here is a brief summary...
+Here is a very brief summary...
 
 1. It's hard coded into the Bitcoin code that the [genesis block](https://en.bitcoin.it/wiki/Genesis_block) reward can't be spent and does not form part of the UTXO set
 2. Duplicate TxID bug outlined in [BIP30](https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki)
