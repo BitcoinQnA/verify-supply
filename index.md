@@ -16,13 +16,10 @@ For the first time in human history, anyone has the freedom to find out the **ex
 
 Verifying the total supply of all bitcoins in existence is significantly easier than you might imagine. You can run this command any time you like, as often as you like, safe in the knowledge that you are only trusting your own hardware and open sourced software to verify for you.
 
-Here's how...
-
 ### Stand Alone Nodes
 
 1. Set up your [node](https://node.guide)
-2. Once initial block download is complete SSH in to your node. This is not required if you are running Bitcoin Core.
-Instructions to do this will be found in your node's documentation pages. Mac + Linux users should do this via 'Terminal' and Windows users can download and use [Putty](https://www.putty.org/)
+2. Once initial block download is complete, SSH in to your node. Instructions to do this will be found in your node's documentation pages. Mac + Linux users should do this via 'Terminal' and Windows users can download and use [Putty](https://www.putty.org/)
 3. Enter the following command `bitcoin-cli gettxoutsetinfo`
 4. Wait. Depending on your hardware, this could take up to 10 minutes
 
@@ -51,7 +48,7 @@ Once connected to your node, the following applications allow you to verify the 
 
 ***
 
-You should then see a response that looks like this...
+After a short wait, you should see a response that looks like this...
 
 ```
 {
