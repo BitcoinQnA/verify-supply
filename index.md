@@ -14,7 +14,7 @@ For the first time in human history, anyone has the freedom to find out the **ex
 
 ## How?
 
-Verifying the total supply of all bitcoins in existence is significantly easier than you might imagine. You can run this command any time you like, as often as you like, safe in the knowledge that you are only trusting your own hardware and open sourced software to verify for you.
+Verifying the total supply of all bitcoins in existence is significantly easier than you might imagine. If you have your own node, you can do this any time you like, as often as you like, safe in the knowledge that you are only trusting your own hardware and open sourced software to verify for you.
 
 ### Stand Alone Nodes
 
