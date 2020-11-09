@@ -18,8 +18,8 @@ Verifying the total supply of all bitcoins in existence is significantly easier 
 
 ### Stand Alone Nodes
 
-1. Set up your [node](https://node.guide)
-2. Once initial block download is complete, SSH in to your node. Instructions to do this will be found in your node's documentation pages. Mac + Linux users should do this via 'Terminal' and Windows users can download and use [Putty](https://www.putty.org/)
+1. Set up your [node](https://node.guide) and wait for your initial block download to complete
+2. SSH in to your node. Instructions to do this will be found in your node's documentation pages. Mac + Linux users should do this via 'Terminal' and Windows users can download and use [Putty](https://www.putty.org/)
 3. Enter the following command `bitcoin-cli gettxoutsetinfo`
 4. Wait. Depending on your hardware, this could take up to 10 minutes
 
@@ -34,10 +34,9 @@ Once again, depending on your hardware this may take up to 10 minutes.
 
 ### Bitcoin Core
 
-1. Download and install [Bitcoin Core](https://bitcoin.org/en/download) onto your computer
-2. Wait for initial block download to complete
-3. Open 'console' within Bitcoin Core and enter `gettxoutsetinfo`
-4. Wait. Depending on your hardware, this could take up to 10 minutes
+1. Download and install [Bitcoin Core](https://bitcoin.org/en/download) then wait for your initial block download to complete
+2. Open 'console' within Bitcoin Core and enter `gettxoutsetinfo`
+3. Wait. Depending on your hardware, this could take up to 10 minutes
 
 ### Other options
 
