@@ -92,6 +92,8 @@ Now that we understand that we can calculate the expected amount of bitcoins at 
 
 Add them all together and we get **18,537,418.75** of expected supply. However, my node calculated that, at block height 655,987 there were in fact **18,537,233.94446619**. 
 
+***
+
 Why would my node calculate that there are actually **184.80553381** less bitcoins in existence that the known emission schedule suggests there should be?  
 
 There are a number of reasons that are outlined in great detail in [this article](https://fjahr.com/posts/where-are-the-coins/) by [Fjhar](https://twitter.com/fjahr). Here is a brief summary...
