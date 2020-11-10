@@ -80,13 +80,13 @@ Now that we understand that we can calculate the expected amount of bitcoins at 
 * Reward era 1 = (50 * 210,000) = **10,500,000**
 * Reward era 2 = (25 * 210,000) = **5,250,000**
 * Reward era 3 = (12.5 * 210,000) = **2,625,000**
-* Reward era 4 = (6.25 * (655,987 - 630,000)) = **162,418.75**
+* Reward era 4 = (6.25 * (655,987 - 629,999)) = **162,425**
  
 *655,987 = The block height at time of running gettxoutsetinfo*  
-*630,000 = The amount of blocks that have passed before the current reward era*  
+*629,999 = The height of last block before current era*  
 *If we minus one from the other, we determine how many blocks have passed during the current reward era*
 
-Add them all together and we get **18,537,418.75** of expected supply. 
+Add them all together and we get **18,537,425** of expected supply. 
 
 However, my node calculated that, at block height 655,987 there were in fact **18,537,233.94446619**. 
 
@@ -94,7 +94,7 @@ However, my node calculated that, at block height 655,987 there were in fact **1
 
 ## Missing Bitcoin?
 
-Why would my node calculate that there are actually **184.80553381** less bitcoins in existence that the known emission schedule suggests there should be?  
+Why would my node calculate that there are actually **191.05553381** less bitcoins in existence that the known emission schedule suggests there should be?  
 
 There are a number of reasons that are outlined in great detail in [this article](https://fjahr.com/posts/where-are-the-coins/) by [Fjhar](https://twitter.com/fjahr) or you can read a shorter version in [this](https://bitcoin.stackexchange.com/questions/38994/will-there-be-21-million-bitcoins-eventually/38998#38998) Bitcoin Stack Exchange answer.
 
