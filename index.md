@@ -2,6 +2,10 @@
 layout: default
 ---
 
+[![bitcoinerheader](https://raw.githubusercontent.com/BitcoinQnA/verify-supply/master/assets/images/VDS.png)](https://verify.supply)
+
+<br/>
+
 Do you know how many dollars have ever been printed?
 
 Do you know how much gold has ever been mined?
