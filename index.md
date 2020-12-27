@@ -111,7 +111,8 @@ Here is a very brief summary...
 ***
 
 <p align="center">
-  <a href="https://twitter.com/BitcoinQ_A">By Bitcoin Q+A</a>
+  <a href="https://twitter.com/BitcoinQ_A">By Bitcoin Q+A</a> |
+  <a href="https://bitcoiner.guide">More resources</a>
   <br><br>
 </p>
 
